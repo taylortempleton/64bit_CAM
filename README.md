@@ -25,6 +25,13 @@ Tools: Synopsys Custom Compiler
 -Review of design options to be explored (logic styles and circuit topologies for bit-cells, decoders and flipflops)
 -First pass floor plan
 
+3/25 Draft planning diagrams for data+control signals:
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.pdf)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.pdf)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.pdf)
+
+
+
 ## Milestone #2 - Due 4/4
 
 
