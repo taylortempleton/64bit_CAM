@@ -27,9 +27,6 @@ Tools: Synopsys Custom Compiler
 
 3/25 Draft planning diagrams for data+control signals:
 
-
-ECE546_Milestone1_FloorPlan_Draft_01.png
-
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.png)
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.png)
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.png)
