@@ -1,4 +1,4 @@
-*** Status Mar/22/2024: Team kickoff, rough floorplanning in progress. ECD April/24/2024 ***
+*** Status Mar/22/2024: Team kickoff, rough floorplanning in progress.***
 
 # 64-bit Content Addressable Memory
 
@@ -20,25 +20,25 @@ Purpose: Build understanding content addressable memory architecture, optimize d
 
 Tools: Synopsys Custom Compiler
 
-## Milestone #1 - Due 3/28
-(In progress)
+## Milestone #1
+(In progress, Due 3/28)
 -Review of design options to be explored (logic styles and circuit topologies for bit-cells, decoders and flipflops)
 -First pass floor plan
 
 3/25 Draft planning diagrams for data+control signals:
 
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.png)
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.png)
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.png)
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.pdf)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.svg)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.svg)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.svg)
 
 
 
-## Milestone #2 - Due 4/4
+## Milestone #2
+(Due 4/4)
 
 
 ## Final Submission
-
+(Due 4/23)
 
 
 
