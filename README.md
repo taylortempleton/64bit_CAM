@@ -26,9 +26,10 @@ Tools: Synopsys Custom Compiler
 -First pass floor plan
 
 3/25 Draft planning diagrams for data+control signals:
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.pdf)
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.pdf)
-![](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.pdf)
+
+([](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_01.png))
+([](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_02.png))
+([](https://github.com/taylortempleton/64bit_CAM/blob/main/ECE546_Milestone1_FloorPlan_Draft_03.png))
 
 
 
