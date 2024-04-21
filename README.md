@@ -1,27 +1,25 @@
-*** Status Mar/22/2024: Team kickoff, rough floorplanning in progress.***
+*** April 21 2024 Status ***
+
+Project complete. Full github update after final exams.  Final layout:
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/CAMLayout.png)
+
+********
+
+
 
 # 64-bit Content Addressable Memory
 
-## Hello!
-
-I am a Raleigh, NC based engineer with RF semiconductor fabrication experience reskilling for a logic-focused career path via graduate ASIC design & verification coursework at NC State.
-
-Below is a class-assigned project from ECE546 VLSI Design Systems. All input is much appreciated.  Thank you!
-
-Taylor Templeton
-taylor.templeton@gmail.com
-
-
 ## Project Summary
 
-Output: Design a 64-bit Content Addressable Memory (CAM).
+Output: Design a 64-bit Content Addressable Memory.
 
-Purpose: Build understanding content addressable memory architecture, optimize design for delay, energy and area.
+Purpose: Build understanding content addressable memory optimize design for delay, power and area, physically verify (pass DRC & LVS), extract and simulate layout parasitics (LPE)
 
-Tools: Synopsys Custom Compiler
+Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux
+
+
 
 ## Milestone #1
-(In progress, Due 3/28)
 -Review of design options to be explored (logic styles and circuit topologies for bit-cells, decoders and flipflops)
 -First pass floor plan
 
