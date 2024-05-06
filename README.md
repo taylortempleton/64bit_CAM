@@ -4,22 +4,19 @@
 
 Output: Create transistor-level schematic and mask-layout for 64-bit Content Addressable Memory (CAM), optimize for delay, power and area product.
 
-Purpose: Build understanding of CAM function and design, physical design verifcation (pass DRC & LVS), and layout parasitic extraction (LPE).
+Purpose: Build understanding of CAM function, physical design verifcation (pass DRC & LVS), and layout parasitic extraction (LPE).
 
 Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK process design kit](https://eda.ncsu.edu/FreePDK/)
 
 
 ## Design Description
-* CAMs are notable for allowing search of memory contents within one single clock cycle, specifying only the desired data. ("Is data 0x4a stored in memory?" "Yes, it is stored at address 2.")  The design needed to 1) write given test values to a given memory address and 2) when searching for a given value, return the correct memory address and a 'found' signal, indicating the search value was indeed stored in memory.
+* CAMs are notable for allowing search of memory contents within a single clock cycle, specifying only search data. ("Is data 0x4a stored anywhere in memory?" "Yes, it is stored at address 2.")  The design needed to 1) write given test values to a given address and 2) return the correct memory address and a 'found' signal when searching for data stored in memory.
 * Subunits
-    * Bitcell: The team selected a 10T NOR type bit cell, as described in Pagiamtzis et. al. 2006.
-    * Row Decoder: Dynamic NOR decoder.
-    * Encoder/Found Logic: 3 4-bit gates used to create 8-to-3 bit encoder. 8-bit OR used to create 'found' logic.
-    * Conditioners: ML pull up conditioners.
-    * D Flip Flop: TPSC flip flops were used to avoid requiring 2 clock phases.
-      
- ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/BlockDiagram_FinalReport.png)
-  
+    * Bitcell: Unit cell storing data, created from cross coupled inverters.  The team selected a 10T NOR type bit cell, as described in Pagiamtzis et. al. 2006.
+    * Row Decoder: Needed to decode the 3-bit write address to one of 8 row addresses. Dynamic NOR decoder.
+    * Encoder/Found Logic: Needed to encode the 8 row addresses into a 8-bit found address.  3 4-bit OR gates used. 8-bit OR used to create 'found' logic, indicating a searched value is stored in memory.
+    * Conditioners: Gate-clocked pmos transistors pull up matchlines, prior to search operation.
+    * D Flip Flop: Needed to store final output steady for one clock cycle due to spec requirement.  True Single-Phase Clocked (TPSC) flip flops were used to avoid routing both clock phases. 
 
 ## Project Specs & Timing
 1. 64 bit (8 bit x 8 bit) CAM
@@ -32,6 +29,8 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
 3. Outputs
     * MA<2:0> – match-address
     * FOUND – (high = match found, low = no match)
+  
+ ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/BlockDiagram_FinalReport.png)
 
 ## Schematics, Layouts, Waveforms & Statistics
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/CAM_Master_Layout.png)
