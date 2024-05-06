@@ -18,7 +18,7 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
     * Conditioners: ML pull up conditioners.
     * D Flip Flop: TPSC flip flops were used to avoid requiring 2 clock phases.
       
- ![](https://github.com/taylortempleton/64bit_CAM/edit/main/Docs/BlockDiagram_FinalReport.png)
+ ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/BlockDiagram_FinalReport.png)
   
 
 ## Project Specs & Timing
@@ -34,8 +34,16 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
     * FOUND – (high = match found, low = no match)
 
 ## Schematics, Layouts, Waveforms & Statistics
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/CAM_Master_Layout.png)
+![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/STARRC_Output.png)
 
 ## Lessons Learned & Next Steps
+1. Lessons Learned
+* Design of sub-units needs to take into account integration.  The team had to redesign units during integration, because things like how buried power rail spacing was not considered.
+2. Next steps
+* Add true search conditioner
+* Add advanced matchline conditioner
+* Compare dynamic decoder to hierarchical decoder
 
 ## Sources & Team WorkLoad
 
