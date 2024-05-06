@@ -37,10 +37,15 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/CAM_Master_Layout.png)
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/STARRC_Output.png)
 
-## Lessons Learned & Next Steps
-1. Lessons Learned
+## Conclusions, Lessons Learned & Next Steps
+1. Conclusions
+* Area
+* Density
+* Energy
+* EDA value:
+3. Lessons Learned
 * Design of sub-units needs to take into account integration.  The team had to redesign units during integration, because things like how buried power rail spacing was not considered.
-2. Next steps
+3. Next steps
 * Add true search conditioner
 * Add advanced matchline conditioner
 * Compare dynamic decoder to hierarchical decoder
