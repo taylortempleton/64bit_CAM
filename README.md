@@ -1,3 +1,5 @@
+**** 5/6 Status: Update in progress. ****
+
 # 64-bit Content Addressable Memory
 
 ## Project Summary
