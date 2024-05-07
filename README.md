@@ -38,8 +38,6 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/CAM_Master_Layout.png)
 ![](https://github.com/taylortempleton/64bit_CAM/blob/main/Docs/STARRC_Output.png)
 
-## Conclusions, Lessons Learned & Next Steps
-1. Conclusions
 * Observations
    *  Returned search values (Match Addresses) are correct, however unexplained zeros returned to match lines during read. Incorrect.
    *  ~0.5V spikes in Match Address, Found signals need to be eliminated.
@@ -52,9 +50,11 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
    * Transistors/Area: 36.5/um^2
    * Total Energy: 2.45 pJ
    * EDA value: 5.20 pJ*ns*um^2
-2. Lessons Learned
+
+## Lessons Learned & Next Steps
+1. Lessons Learned
 * Design of sub-units needs to take into account integration.  The team had to redesign units during integration, because things like how buried power rail spacing was not considered.
-3. Next steps
+2. Next steps
 * Add true search conditioner
 * Add advanced matchline conditioner
 * Compare dynamic decoder to hierarchical decoder
