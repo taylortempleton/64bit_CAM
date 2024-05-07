@@ -44,12 +44,12 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
    *  Write Line abnormality needs to be eliminated.
    *  Match Line abnormality needs to be eliminated: unexplained ~0.4V ripple in M1, abnormal search peaks
 * Design Statistics
-   * Read Access Time: 75ps
+   * Read Access Time: 65ps
    * Area: 28.3 um^2
    * Transistor Count: 726 NMOS, 306 PMOS
    * Transistors/Area: 36.5/um^2
    * Total Energy: 2.45 pJ
-   * EDA value: 5.20 pJ*ns*um^2
+   * EDA value: 95 pJ*ns*um^2
 
 ## Lessons Learned & Next Steps
 1. Lessons Learned
