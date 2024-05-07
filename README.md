@@ -1,4 +1,4 @@
-**** 5/6 Status: Update in progress. ****
+**** 5/7 Status: Group project complete.  Planning individual improvments. ****
 
 # 64-bit Content Addressable Memory
 
@@ -12,7 +12,7 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
 
 
 ## Design Description
-* CAMs are notable for allowing search of memory contents within a single clock cycle, specifying only search data. ("Is data 0x4a stored anywhere in memory?" "Yes, it is stored at address 2.")  The design needed to 1) write given test values to a given address and 2) return the correct memory address and a 'found' signal when searching for data stored in memory.
+* CAMs are notable in that they allow search of memory contents, within a single clock cycle, specifying only search data. ("Is data 0x4A stored anywhere in memory?" "Yes, it is stored at address 2.")  The design must 1) write given test values to a given address and 2) return the correct memory address and a 'found' signal when searching for data stored in memory.
 * Subunits
     * Bitcell: Unit cell storing data, created from cross coupled inverters.  The team selected a 10T NOR type bit cell, as described in Pagiamtzis et. al. 2006.
     * Row Decoder: Needed to decode the 3-bit write address to one of 8 row addresses. Dynamic NOR decoder.
@@ -40,11 +40,19 @@ Tools: Synopsys Custom Compiler, HSPICE,  StarRC, Linux, [NC State's 3nm FreePDK
 
 ## Conclusions, Lessons Learned & Next Steps
 1. Conclusions
-* Area
-* Density
-* Energy
-* EDA value:
-3. Lessons Learned
+* Observations
+   *  Returned search values (Match Addresses) are correct, however unexplained zeros returned to match lines during read. Incorrect.
+   *  ~0.5V spikes in Match Address, Found signals need to be eliminated.
+   *  Write Line abnormality needs to be eliminated.
+   *  Match Line abnormality needs to be eliminated: unexplained ~0.4V ripple in M1, abnormal search peaks
+* Design Statistics
+   * Read Access Time: 75ps
+   * Area: 28.3 um^2
+   * Transistor Count: 726 NMOS, 306 PMOS
+   * Transistors/Area: 36.5/um^2
+   * Total Energy: 2.45 pJ
+   * EDA value: 5.20 pJ*ns*um^2
+2. Lessons Learned
 * Design of sub-units needs to take into account integration.  The team had to redesign units during integration, because things like how buried power rail spacing was not considered.
 3. Next steps
 * Add true search conditioner
